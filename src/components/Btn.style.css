@@ -1,0 +1,17 @@
+.btn{
+    padding: 1rem;
+    font-weight: 900;
+
+    cursor: pointer;
+    display: inline;
+    text-align: center;
+
+    background: #0000;
+
+    color: #0006;
+    transition: .15s ease-in-out;
+}
+
+.btn:hover {
+    color: hsla(150, 42%, 55%)
+}

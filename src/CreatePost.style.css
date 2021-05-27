@@ -1,0 +1,46 @@
+.form_container {
+    flex: 0 1 max(40%, 40rem);
+
+
+    padding: 1em;
+    background: hsl(0, 0%, 70%);
+ 
+    display: flex;
+    flex-direction: column;
+    
+    gap: 1em;
+}
+
+
+input, textarea, button {
+    padding: .5em;
+    outline:none;
+    border: none;
+}
+
+input {
+    font-size: 1.5em;
+}
+
+textarea {
+    resize: none;
+}
+
+.button {
+    margin-left: auto;
+    padding: .5em 1.5em;
+    border-radius: 99em;
+
+    font-weight: 600;
+    font-style: italic;
+    color: #fff;
+
+    transition: .15s ease-out;
+    background: hsla(142, 80%, 30%, 0.2);
+}
+
+.button:hover {
+    cursor: pointer;
+    
+    background: hsla(142, 70%, 50%, 1);
+}

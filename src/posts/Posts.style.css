@@ -1,0 +1,37 @@
+.postWrapper {
+    display: grid;
+    grid: auto-flow dense 20em / repeat(auto-fill, minmax(20em, 1fr));
+    gap: 1em;
+    padding: 1em;
+}
+
+.post {
+    filter: opacity(.7) grayscale(1);
+    padding: 1em;
+    transition: .2s ease;
+}
+
+.post:hover, .post.focus {
+    opacity: 1;
+    transform: scale(1.05) translateY(-5%);
+    
+    filter: opacity(1) grayscale(0);
+    cursor: pointer;
+}
+
+.post *+* {
+    margin-top: 1em;
+}
+
+.title {
+    text-transform: capitalize;
+    padding-left: .5em;
+    border-left: 1em solid #0003;
+}
+
+.body{
+    line-height: 1.6;
+
+    word-wrap: break-word;
+    line-break: anywhere;
+}
